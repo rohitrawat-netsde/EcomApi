@@ -1,4 +1,4 @@
-namespace EcomApi
+namespace EcomApi.Models
 {
     public class WeatherForecast
     {

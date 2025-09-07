@@ -6,3 +6,6 @@
 *.wsuo
 *.json
 *.sqlite
+*.v2
+*.tmp
+*.ps1
