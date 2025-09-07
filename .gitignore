@@ -10,3 +10,6 @@
 *.tmp
 *.ps1
 /EcomApi/.vs/ProjectEvaluation
+/EcomApi/.vs/EcomApi/v17
+/EcomApi/bin/Debug/net8.0
+/EcomApi/obj
