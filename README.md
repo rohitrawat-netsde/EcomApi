@@ -54,37 +54,6 @@ Dockerfile ready
 
 🗺 Architecture
 
-📂 Project Structure
-EcomApi/
-├─ src/
-│  ├─ EcomApi/
-│  │  ├─ Controllers/
-│  │  ├─ DTOs/
-│  │  ├─ Entities/          # ApplicationUser, Product, Review, Order, Coupon, RefreshToken
-│  │  ├─ Data/              # AppDbContext, Fluent configs, Seed
-│  │  ├─ Services/          # AuthService, JwtService, etc.
-│  │  ├─ Middleware/        # Error handling, Rate limiting (built-in), etc.
-│  │  ├─ Options/           # JwtOptions, CloudinaryOptions, StripeOptions
-│  │  ├─ Filters/           # Validation filters (optional)
-│  │  ├─ Extensions/        # DI & config extension methods
-│  │  ├─ appsettings.json
-│  │  └─ Program.cs
-│  └─ EcomApi.Tests/        # Unit/Integration tests (optional)
-├─ docs/
-│  ├─ images/
-│  │  ├─ swagger.png
-│  │  ├─ dashboard.png
-│  │  └─ postman-auth-flow.png
-│  └─ ERD.md
-├─ .editorconfig
-├─ .gitignore
-├─ README.md
-└─ Dockerfile
-
-📸 Screenshots (placeholders)
-
-Put your real images in docs/images/ with these names and they’ll render here automatically.
-
 Swagger UI
 
 
