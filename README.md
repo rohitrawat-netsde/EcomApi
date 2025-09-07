@@ -53,23 +53,6 @@ User Secrets for local secrets; env variables for prod
 Dockerfile ready
 
 🗺 Architecture
-flowchart LR
-  Client[Web / Mobile / Postman] --> API[ASP.NET Core Web API]
-  API -->|EF Core| SQL[(SQL Server)]
-  API -->|Redis Cache| REDIS[(Redis)]
-  API -->|Images| Cloudinary[(Cloudinary)]
-  API -->|Payments| Stripe[(Stripe)]
-  subgraph Auth
-    Identity[(ASP.NET Identity)]
-    JWT[JWT Service]
-    RT[RefreshTokens Table]
-  end
-  API --> Identity
-  API --> JWT
-  API --> RT
-
-
-If you prefer PNGs, drop screenshots/diagrams into docs/images/ and the README already references them.
 
 📂 Project Structure
 EcomApi/
