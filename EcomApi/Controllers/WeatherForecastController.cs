@@ -1,3 +1,4 @@
+using EcomApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcomApi.Controllers
