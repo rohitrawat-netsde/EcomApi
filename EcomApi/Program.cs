@@ -1,5 +1,7 @@
 
+using EcomApi.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -7,7 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Configuration.AddUserSecrets<Program>();
+if (builder.Environment.IsDevelopment())
+{
+    // Ye optional hai, default me bhi hota hai agar <UserSecretsId> diya ho
+    builder.Configuration.AddUserSecrets<Program>();
+}
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 
 // Add authentication
